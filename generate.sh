@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Format
+
+c_formatter_42 $(find . -type f \( -name "*.c" -o -name "*.h" \))
+
 # Comprobar si se pasó un argumento para el nombre del programa
 if [ -n "$1" ]; then
     NAME="$1"
